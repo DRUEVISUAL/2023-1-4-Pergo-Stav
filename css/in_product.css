@@ -304,6 +304,11 @@ nav a {
   margin-bottom: 2rem;
 }
 
+.product_summary a, .product_description a {
+  color: var(--main);
+  text-decoration: underline;
+}
+
 .product_description {
   font-size: var(--fs_14px);
   margin-bottom: 2rem;
@@ -501,6 +506,10 @@ nav a {
 
 .title span {
   font-weight: 400;
+}
+
+.color_categories_container {
+  width: 100%;
 }
 
 .color_category {
@@ -709,10 +718,6 @@ aside i {
   padding-bottom: -0.5rem;
 }
 
-.dropdown {
-  overflow-x: scroll;
-}
-
 .no_scroll {
   overflow-x: initial;
 }
@@ -764,7 +769,7 @@ th, td {
 }
 
 th {
-  background-color: var(--white_60);
+  background-color: var(--line);
 }
 
 .info_panel .figure_container {
@@ -789,7 +794,7 @@ th {
   margin-block: 1rem;
 }
 
-.info_panel h4, .info_panel_table h4 {
+h4 {
   font-size: var(--fs_20px);
   margin-block: 1rem;
 }
