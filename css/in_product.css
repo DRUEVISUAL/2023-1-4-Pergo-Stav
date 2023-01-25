@@ -2,7 +2,6 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -718,6 +717,10 @@ aside i {
   overflow-x: initial;
 }
 
+.scroll {
+  overflow-x: scroll;
+}
+
 .dropdown h3 {
   font-size: var(--fs_18px);
   font-weight: 400;
@@ -746,6 +749,7 @@ table {
   min-width: 1024px;
   border-collapse: collapse;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 table, th, td {
@@ -763,22 +767,14 @@ th {
   background-color: var(--white_60);
 }
 
-.info_panel {
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+.info_panel .figure_container {
+  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.info_panel figure {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-}
-
 .info_panel figure img {
-  width: calc(320px - 2rem);
+  width: calc(300px - 2rem);
   border-radius: 4px;
 }
 
@@ -787,6 +783,27 @@ th {
   text-align: center;
   word-wrap: break-word;
   margin-bottom: 2rem;
+}
+
+.info_panel p {
+  margin-block: 1rem;
+}
+
+.info_panel h4, .info_panel_table h4 {
+  font-size: var(--fs_20px);
+  margin-block: 1rem;
+}
+
+.info_panel ul {
+  list-style: initial;
+}
+
+.info_panel li {
+  list-style: initial;
+}
+
+.info_panel hr {
+  margin-block: 1rem;
 }
 
 /*//////////////////////////////////////////////////*/
