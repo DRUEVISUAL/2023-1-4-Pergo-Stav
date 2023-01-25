@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#002356">
+
+    <title>Kontakt - PERGO Stav</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="nav_main">
+        <a href="../index.html" class="flex_cc"><img src="../img/logo_text.svg" alt="pergo stav logo" class="logo"></a>
+
+        <ul class="nav_buttons_desktop flex_rc">
+            <li role="navigation"><a href="../index.html#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
+            <li role="navigation"><a href="./inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
+            <li role="navigation"><a href="#kontakt"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
+        </ul>
+
+        <i class="bi bi-list" id="menu_button"></i>
+
+        <div class="menu_phone">
+            <ul class="nav_buttons_phone flex_cc">
+                <li><a href="../index.html#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
+                <li><a href="./inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
+                <li><a href="#kontakt"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="kontakt">
+
+        <div class="container">
+
+            <div class="title_container">
+                <h1 class="title">V prípade <span>záujmu</span> alebo <span>otázok</span></h1>
+                <hr class="line">
+                <p>kontaktujte nás</p>
+            </div>
+
+            <div class="panel_container">
+
+                <div class="phone_panel panel">
+                    <p><i class="bi bi-telephone-fill"></i>+421 911 997 742</p>
+                </div>
+
+                <div class="phone_panel panel">
+                    <p><i class="bi bi-telephone-fill"></i>+421 911 997 743</p>
+                </div>
+
+                
+                <div class="form_panel panel">
+                    <form action="https://formsubmit.co/druevisual@gmail.com" method="post">
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="https://druevisual.github.io/202314-Pergo-Stav/html/dakujeme.html">
+
+                        <div class="input_pair_container">
+                            <div class="input_label_container">
+                                <label for="meno">Meno</label>
+                                <input type="text" name="Meno" id="meno" pattern="^[\p{L}'’-]+$" required>
+                            </div>
+
+                            <div class="input_label_container">
+                                <label for="priezvisko">Priezvisko</label>
+                                <input type="text" name="Priezvisko" id="priezvisko" pattern="^[\p{L}'’-]+$" required>
+                            </div>
+                        </div> <!-- input_pair_container -->
+
+
+                        <div class="input_pair_container">
+                            <div class="input_label_container">
+                                <label for="telefon">Tel. č.</label>
+                                <input type="tel" name="Tel. č." id="telefon" pattern="^+[2-3]{1}\d{9}$" minlength="10" maxlength="13" required>
+                            </div>
+
+
+                            <div class="input_label_container">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="E-mail" id="email" required>
+                            </div>
+                        </div> <!-- input_pair_container -->
+
+                        <div class="input_label_container sprava">
+                            <label for="sprava">Správa</label>
+                            <textarea maxlength="600" name="Správa" id="sprava" rows="8" required ></textarea>
+                        </div>
+
+                        <input type="submit" value="Odoslať" class="submit_button">
+                    </form>
+                </div>  <!-- form_panel -->
+
+
+                <div class="phone_map_desktop_container">
+
+                    <div class="phone_panel panel">
+                        <p><i class="bi bi-telephone-fill"></i>+421 911 997 742</p>
+                    </div>
+
+                    <div class="phone_panel panel">
+                        <p><i class="bi bi-telephone-fill"></i>+421 911 997 743</p>
+                    </div>
+
+
+                    <div class="map_panel panel">
+
+                        <h2>Navštívte nás</h2>
+
+                        <div class="adress_clock_container">
+                            <div class="adress_container icon">
+                                <h3>Adresa</h3>
+                                <p>Trhovisko 1228/10</p>
+                                <p>929 01 Dunajská Streda</p>
+                            </div>
+
+                            
+                            <div class="clock_container icon">
+                                <h3>Otváracia doba</h3>
+                                <p>Po - Pi: 08:00 - 16:00</p>
+                            </div>
+                        </div> <!-- adress_clock_container -->
+
+
+                        <div class="map_container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.8681663252314!2d17.619772415546937!3d47.99693486892505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b9d63d6db5daf%3A0x129ff73e8576bef6!2sTrhovisko%201228%2C%20929%2001%20Dunajsk%C3%A1%20Streda!5e0!3m2!1sen!2ssk!4v1674563995186!5m2!1sen!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                </div> <!-- panel_desktop_container -->
+
+                
+                
+            </div> <!-- panels_container -->
+        </div> <!-- container -->
+    </main>
+
+    <footer class="flex_cc">
+        <a href="../index.html">
+            <img src="../img/logo_text.svg" alt="pergo stav logo" class="footer_logo">
+        </a>
+
+        <div class="footer_text">
+            <p>Pergo Stav s.r.o. - 2023</p>
+            <p>Vytvoril &#169; <a href="">DRUEVISUAL</a></p>
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
