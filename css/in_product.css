@@ -377,6 +377,9 @@ nav a {
   .product_img {
     width: 90%;
   }
+  .scaled {
+    scale: 1.3;
+  }
   .title_phone {
     display: none;
   }
@@ -688,6 +691,10 @@ aside i {
   background-image: url(../img/rozmery/polocha.png);
 }
 
+.uhol {
+  background-image: url(../img/rozmery/uhol.png);
+}
+
 .rozmery_container_desktop {
   display: none;
 }
@@ -779,7 +786,7 @@ th {
 }
 
 .info_panel figure img {
-  width: calc(300px - 2rem);
+  max-width: calc(300px - 2rem);
   border-radius: 4px;
 }
 
