@@ -2,8 +2,8 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
 
 :root{
@@ -135,6 +135,7 @@ nav{
 }
 
 nav a{
+    
     width: 6.140rem;
     height: 1.608rem;
 
@@ -608,6 +609,13 @@ nav a{
 .color_tiles_container img{
     width: 4.3rem;
     border-radius: 4px;
+    transition: scale .25s ease-in-out;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.color_tiles_container img:hover{
+    scale: 1.25;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
 }
 
 .color_tiles_container figcaption{
@@ -727,11 +735,39 @@ aside i{
     background-image: url(../img/ovaladnie/ovladanie_profilom.png);
 }
 
+.bezd_tlaciadlo{
+    background-image: url(../img/ovaladnie/bezd_tlaciadlo.png);
+}
+
+.solar{
+    background-image: url(../img/ovaladnie/solar.png);
+}
+
+.ovladac{
+    background-image: url(../img/ovaladnie/ovladac.png);
+}
+
+.vypinac{
+    background-image: url(../img/ovaladnie/vypinac.png);
+}
+
 #section_5{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    padding: .5rem;
+}
+
+.info{
+    font-size: 0.75rem;
+    
+    background-image: url(../img/info.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
 }
 
 .sirka{
@@ -752,6 +788,7 @@ aside i{
 
 .rozmery_container_desktop{
     display: none;
+    
 }
 /*//////////////////////////////////////////////////*/
 
@@ -764,10 +801,22 @@ aside i{
         display: none;
     }
 
+    .info{
+        font-size: 0.75rem;
+        
+        background-image: url(../img/info.svg);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 1rem;
+    
+        padding-left: 1.5rem;
+    }
+
     .ovladanie_container{
         width: 50%;
         border-right: 2px solid var(--line);
         margin-right: 2.5rem;
+        padding-right: 2rem;
     }
 
     .rozmery_container_desktop{
@@ -860,10 +909,6 @@ th{
 h4{
     font-size: var(--fs_20px);
     margin-block: 1rem;
-}
-
-.info_panel ul{
-    list-style: initial;
 }
 
 .info_panel li{
