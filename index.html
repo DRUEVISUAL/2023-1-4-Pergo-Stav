@@ -19,9 +19,9 @@
             <a href="#hero" class="flex_cc"><img src="./img/logo_text.svg" alt="pergo stav logo" class="logo"></a>
 
             <ul class="nav_buttons_desktop flex_rc" role="navigation">
-                <li role="navigation"><a href="#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
-                <li role="navigation"><a href="./html/inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
-                <li role="navigation"><a href="./html/kontakt.html"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
+                <li role="navigation" class="hero_produkty icon"><a href="#produkty">Produkty</a></li>
+                <li role="navigation" class="hero_inspiracia icon"><a href="./html/inspiracia.html" >Inšpirácia</a></li>
+                <li role="navigation" class="hero_kontakt icon"><a href="./html/kontakt.html">Kontakt</a></li>
             </ul>
 
             <i class="bi bi-list" id="menu_button"></i>
@@ -62,101 +62,107 @@
     </header>
    
     <main id="produkty">
+
         <nav class="nav_main">
             <a href="#hero" class="flex_cc"><img src="./img/logo_text.svg" alt="pergo stav logo" class="logo"></a>
 
-            <ul class="nav_buttons_desktop flex_rc">
+            <ul class="nav_buttons_desktop flex_rc" role="navigation">
                 <li role="navigation"><a href="#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
                 <li role="navigation"><a href="./html/inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
                 <li role="navigation"><a href="./html/kontakt.html"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
             </ul>
         </nav>
 
-        <div class="top_content_container">
-            <div class="title_line_container">
-                <h2>Produkty</h2>
-                <hr>
-            </div>
-            <p class="main_description">Vyberte si z našej širokej ponuky kvalitných a moderných produktou. Ponúkámé interiérové a exteriérové zatienenie, ktoré krásne doplní váš dom.</p>
-        </div>
+        <div class="container">
 
-        <div class="category_container">
-            <a href="./html/category/vonkajsie_zaluzie.html">
-                <div class="category">
-                    <div class="category_img c_img_1"></div>
-                    <div class="category_title flex_cc">Vonkajšie<span>Žalúzie</span></div>
-                </div>
-            </a>
-            <a href="./html/category/vnutorne_zaluzie.html">
-                <div class="category">
-                    <div class="category_img c_img_2"></div>
-                    <div class="category_title flex_cc">Vnútorné<span>Žalúzie</span></div>
-                </div>
-            </a>
-            <a href="./html/item/plisse/plisse.html">
-                <div class="category">
-                    <div class="category_img c_img_3"></div>
-                    <div class="category_title flex_cc">Elegantné<span>Plisse</span></div>
-                </div>
-            </a>
-            
-            <a href="./html/category/screenove_rolety.html">
-                <div class="category">
-                    <div class="category_img c_img_4"></div>
-                    <div class="category_title flex_cc">Screenové<span>Rolety</span></div>
-                </div>
-            </a>
-            <a href="./html/category/latkove_rolety.html">
-                <div class="category">
-                    <div class="category_img c_img_5"></div>
-                    <div class="category_title flex_cc">Látkové<span>Rolety</span></div>
-                </div>
-            </a>
-            <a href="./html/category/predokenne_rolety.html">
-                <div class="category">
-                    <div class="category_img c_img_6"></div>
-                    <div class="category_title flex_cc">Predokenné<span>Rolety</span></div>
-                </div>
-            </a>
-        
-            <a href="./html/category/bioklimaticke_pergoly.html">
-                <div class="category">
-                    <div class="category_img c_img_7"></div>
-                    <div class="category_title flex_cc">Bioklimatické<span>Pergoly</span></div>
-                </div>
-            </a>
-            <a href="./html/category/terasove_markizy.html">
-                <div class="category">
-                    <div class="category_img c_img_8"></div>
-                    <div class="category_title flex_cc">Terasové<span>Markízy</span></div>
-                </div>
-            </a>
-            <a href="./html/category/tienenie_pre_verandy.html">
-                <div class="category">
-                    <div class="category_img c_img_9"></div>
-                    <div class="category_title flex_cc">Tienenie pre<span>Verandy</span></div>
-                </div>
-            </a>
-            
-            <a href="./html/category/protihmyzove_sietky.html">
-                <div class="category">
-                    <div class="category_img c_img_10"></div>
-                    <div class="category_title flex_cc">Protihmyzové<span>Sieťky</span></div>
-                </div>
-            </a>
-            <a href="./html/item/japonske_steny/japonske_steny.html">
-                <div class="category">
-                    <div class="category_img c_img_11"></div>
-                    <div class="category_title flex_cc">Japonské<span>Steny</span></div>
-                </div>
-            </a>
-            
-        </div>
+            <div class="title_container">
+                <h1 class="title"><i class="bi bi-box2-fill"></i><span>Produkty</span></h2>
+                <hr class="line">
+            </div>
+
+            <div class="category_description">
+                <p>Vyberte si z našej širokej ponuky kvalitných a moderných produktou. Ponúkámé interiérové a exteriérové zatienenie, ktoré krásne doplní váš dom.</p>
+            </div>
+
+            <div class="category_container">
+
+                <a href="./html/category/vonkajsie_zaluzie.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/vonkajsia_zaluzia/P1030636.JPG" alt="Vonkajšie Žalúzie" class="category_img">
+                        <p class="category_title">Vonkajšie <span>Žalúzie</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/vnutorne_zaluzie.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/vertikalna_zaluzia/Vertikalni-zaluzie-ref-10.jpg" alt="Vnútorné Žalúzie" class="category_img">
+                        <p class="category_title">Vnútorné <span>Žalúzie</span></p>
+                    </div>
+                </a>
+                <a href="./html/item/plisse/plisse.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/plisse/Plisse-ref-14.jpg" alt="Elegantné Plisse" class="category_img">
+                        <p class="category_title">Elegantné <span>Plisse</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/screenove_rolety.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/screenove_rolety/Screen-HR7-ref-6.jpg" alt="Screenové Rolety" class="category_img">
+                        <p class="category_title">Screenové <span>Rolety</span></p>
+                    </div>
+                </a>
+
+
+                <a href="./html/category/latkove_rolety.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/latkove_rolety/Verra-ref-7.jpg" alt="Látkové Rolety" class="category_img">
+                        <p class="category_title">Látkové <span>Rolety</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/predokenne_rolety.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/vonkajsie_rolety/Vivera-ref-12.JPG" alt="Predokenné Rolety" class="category_img">
+                        <p class="category_title">Predokenné <span>Rolety</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/bioklimaticke_pergoly.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/pergoly/Artosi-ins-17.jpg" alt="Bioklimatické Pergoly" class="category_img">
+                        <p class="category_title">Bioklimatické <span>Pergoly</span></p>
+                    </div>
+                </a>
+
+
+                <a href="./html/category/terasove_markizy.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/markizy/Olivia-ref-3.jpg" alt="Terasové Markízy" class="category_img">
+                        <p class="category_title">Terasové <span>Markízy</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/tienenie_pre_verandy.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/verandy/Veranda-HRV08-ZIP-ref-2.jpg" alt="Tienenie pre Verandy" class="category_img">
+                        <p class="category_title">Tienenie pre <span>Verandy</span></p>
+                    </div>
+                </a>
+                <a href="./html/category/protihmyzove_sietky.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/sietky/Site-proti-hmyzu-PS-1-PS-1-V-ref-3.JPG" alt="Protihmyzové Sieťky" class="category_img">
+                        <p class="category_title">Protihmyzové <span>Sieťky</span></p>
+                    </div>
+                </a>
+                <a href="./html/item/japonske_steny/japonske_steny.html">
+                    <div class="category">
+                        <img src="../img/inspiracia/japonske_steny/Japonske-steny-ref-1.jpg" alt="Japonské Steny" class="category_img">
+                        <p class="category_title">Japonské <span>Steny</span></p>
+                    </div>
+                </a>
+            </div> <!-- category_container -->
+        </div> <!-- container -->
     </main>
 
     <footer class="flex_cc">
         <a href="#hero">
-            <img src="./img/logo_text.svg" alt="pergo stav logo" class="footer_logo">
+            <img src="../img/logo_text.svg" alt="pergo stav logo" class="footer_logo">
         </a>
 
         <div class="footer_text">
@@ -164,6 +170,6 @@
             <p>Vytvoril &#169; <a href="">DRUEVISUAL</a></p>
         </div>
     </footer>
-    <script src="./javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

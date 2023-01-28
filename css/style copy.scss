@@ -216,6 +216,9 @@ nav a{
     }
   }
 
+
+  
+
 #hero::after{
     content: "";
     width: 100%;
@@ -369,7 +372,7 @@ nav a{
         background-color: var(--main);
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: spa;
         position: fixed;
         top: 0;
         z-index: 98;
@@ -405,64 +408,15 @@ nav a{
         gap: 15%;
     }
 
-    .nav_buttons_desktop i{
-        margin-right: .5rem;
-    }
-
-
-    .icon{
-        background-size: 1.1rem;
-        background-repeat: no-repeat;
-        background-position-x: 8%;
-        background-position-y: 45%;
-        transition: all .3s ease;
-    }
-
-    .icon:last-child{
-        background-position-x: 12%;
-    }
-
-    .hero_produkty{
-        background-image: url(../img/produkty.svg);
-    }
-
-    .hero_produkty:hover{
-        background-image: url(../img/produkty_hover.svg);
-    }
-
-    .hero_inspiracia{
-        background-image: url(../img/inspiracia.svg);
-    }
-
-    .hero_inspiracia:hover{
-        background-image: url(../img/inspiracia_hover.svg);
-    }
-
-    .hero_kontakt{
-        background-image: url(../img/kontakt.svg);
-    }
-
-    .hero_kontakt:hover{
-        background-image: url(../img/kontakt_hover.svg);
-    }
-
-    .main_ic{
-        background-position-x: 0%;
-        background-position-y: 30%;
-    }
-
-    .main_ic:last-child{
-        background-position-x: 3%;
-    }
-
-
     .nav_main .nav_buttons_desktop{
         gap: 5%;
         justify-content: flex-end;
+        margin-right: 2rem;
     }
 
     .nav_buttons_desktop li i{
         font-size: var(--fs_14px);
+        margin-right: .7rem;
     }
 
     .nav_buttons_desktop a {
@@ -472,10 +426,12 @@ nav a{
         font-size: var(--fs_14px);
         color: var(--main_light);
         cursor: pointer;
-        transition: all .3s ease;
     }
 
-    .nav_buttons_desktop a:hover
+    .nav_buttons_desktop a:hover {
+        opacity: .8;
+        transition: all .5s ease;
+    }
 
     .nav_buttons_desktop a:active{
         opacity: .4;
@@ -599,167 +555,221 @@ nav a{
 /*//////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////*/
 
-main{
-    width: 100%;
-    color: var(--main);
+#produkty{
     background-image: linear-gradient(180deg,var(--gradient_top),var(--gradient_bottom));
-    display: grid;
-    place-items: center;
-    min-width: 320px;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main);
 }
 
-.container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    padding-inline: .5rem;
-}
-
-.title_container{
-    width: max-content;
-    margin-bottom: 2rem;
-}
-
-.title{
-    font-size: var(--fs_32px);
-    font-weight: 300;
-}
-
-.title i{
-    margin-right: .8rem;
-}
-
-.fit{
-    font-weight: 300!important;
-}
-
-.title span{
+.title_line_container{
+    width: 9.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    padding: 5rem 0 1.5rem 0;
 }
 
-.line{
+.title_line_container hr{
     width: 100%;
-    border: 1px solid var(--line);
+    border: 1px solid var(--line)
 }
 
-.category_description{
-    font-size: var(--fs_14px);
-    margin-bottom: 2rem;
-    width: 100%;
+.main_description{
+    margin-bottom: 2.5rem;
 }
 
 .category_container{
-    padding: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content:center;
-    flex-wrap: wrap;
-    row-gap: 3rem;
-    column-gap: 2rem;
+    width: 100%;
 }
 
 .category{
-    position: relative;
-    width: 22rem;
-    height: 17rem;
-    cursor: pointer;
-
-    transition: box-shadow .5s ease, scale .5s ease;
-}
-
-.category:hover .category_img, .category:hover .category_title{
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.10);
-    scale: 1.02;
-    transition: box-shadow .5s ease, scale .5s ease;
-}
-
-.category:hover .category_img::after{
-    opacity: .1;
-
-    transition: opacity .5s ease;
-}
-
-.category_img::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: white;
-    opacity: 0;
-    transition: all .5s ease;
-}
-
-.category_title{
-    font-size: var(--fs_20px);
-    color: var(--main);
-    text-align: center;
-
-    background-color: white;
-    border: 4px solid var(--main_light);
-    border-radius: 4px;
-
-    width: 16rem;
-    padding: .8rem 1rem .8rem 1rem;
-    position: absolute;
-    bottom: -1.5rem;
-    left: 50%;
-    translate: (-50%);
-
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: box-shadow .5s ease, scale .5s ease;
-}
-
-.category_title span{
-    font-weight: 600;
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
 }
 
 .category_img{
-    border: 8px solid white;
-    border-radius: 2px;
-
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: box-shadow .5s ease, scale .5s ease;
+    width: 50%;
+    height:  96px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-a .category {
-color: var(--main);
+.category_title{
+    font-size: var(--fs_14px);
+    background-color: var(--white_60);
+    border-radius: 0 4px 4px 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 0px 6px -2px rgba(0, 0, 0, 0.15);
 }
 
+.category_title span{
+    font-size: var(--fs_18px);
+    font-weight: 600;
+}
+
+.c_img_1{
+    background-image: url(../img/product_category/vonkajsie_zaluzie.webp);
+}
+.c_img_2{
+    background-image: url(../img/product_category/vnutorne_zaluzie.webp);
+}
+.c_img_3{
+    background-image: url(../img/product_category/plisse.webp);
+}
+.c_img_4{
+    background-image: url(../img/product_category/screenove_rolety.webp);
+}
+.c_img_5{
+    background-image: url(../img/product_category/latkove_rolety.webp);
+}
+.c_img_6{
+    background-image: url(../img/product_category/vonkajsie_rolety.webp);
+}
+.c_img_7{
+    background-image: url(../img/product_category/pergoly.webp);
+}
+.c_img_8{
+    background-image: url(../img/product_category/markizy.webp);
+}
+.c_img_9{
+    background-image: url(../img/product_category/tienenie_pre_verandy.webp);
+}
+.c_img_10{
+    background-image: url(../img/product_category/protihmyzove_siete.webp);
+}
+.c_img_11{
+    background-image: url(../img/product_category/japonske_steny.webp);
+}
 
 /*//////////////////////////////////////////////////*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+    #produkty{
+        display: grid;
+        place-items: center;
+    }
 
-    .title{
+    .title_line_container{
+        font-size: var(--fs_32px);
+        width: 13rem;
+        padding: 7rem 0 1.5rem 0;
+        text-align: left;
+    }
+
+    .title_line_container hr{
+        width: 108%;
+        border: 1.5px solid var(--line);
+    }
+
+    .main_description{
+        font-size: var(--fs_18px);
+        margin-bottom: 5rem;
+        max-width: 1440px;
+        
+        text-align: left;
+    }
+
+    .top_content_container{
+        max-width: 71rem;
+        padding-left: 2.5rem;
+    }
+
+    .category_container{
+        margin: 0 auto;
+        max-width: 71rem;
         display: flex;
-        font-size: var(--fs_45-2px);
-        gap: .8rem;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 3%;
     }
 
-    .category_description{
-        font-size: var(--fs_16px);
+    .category{
+        position: relative;
+        width: 22rem;
+        height: 17rem;
+        cursor: pointer;
+        transition: box-shadow .5s ease, scale .5s ease;
     }
 
-    .container{
-        margin-top: 6rem;
-        padding-inline: 6rem;
-        margin-bottom: 4rem;
+    .category:hover .category_img, .category:hover .category_title{
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.10);
+        scale: 1.02;
+        transition: box-shadow .5s ease, scale .5s ease;
+    }
+
+    .category:hover .category_img::after{
+        opacity: .1;
+
+        transition: opacity .5s ease;
+    }
+
+    .category_img::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: white;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    .category_title{
+        font-size: var(--fs_15px);
+        background-color: var(--main_light);
+        border-radius: 4px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 45%;
+        height: 5rem;
+
+        z-index: 5;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: box-shadow .5s ease, scale .5s ease;
+    }
+
+    .category_title span{
+        font-size: var(--fs_22-6);
+        background-color: white;
+        border-radius: 4px;
+        width: calc(93%);
+        height: 3rem;
+        display: grid;
+        place-content: center;
+        margin: .2rem 0 .2rem 0;
+    };
+
+    .category_img{
+        border: 8px solid white;
+        border-radius: 2px;
+
+        width: 20rem;
+        height: 15rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: box-shadow .5s ease, scale .5s ease;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .container{
-        max-width: 1350px;
-        padding-inline: 7rem;
+a .category {
+    color: var(--main);
+}
+
+@media screen and (min-width: 1440px) {
+    .title_line_container{
+        font-size: var(--fs_32px);
     }
 }
 

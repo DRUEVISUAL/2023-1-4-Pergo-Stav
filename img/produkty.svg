@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 18 24" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Untitled" vectornator:layerName="Untitled" visibility="hidden">
+<path d="M2.99992 14C2.99983 11.2724 4.83953 8.88797 7.47791 8.19606C10.1163 7.50416 12.8894 8.67892 14.2278 11.0555C15.5663 13.4321 15.1333 16.4125 13.1739 18.31C12.9709 18.506 12.8149 18.71 12.7209 18.929L11.9589 20.698C11.8799 20.8812 11.6995 21 11.4999 21L6.49992 21C6.3 21.0003 6.11909 20.8816 6.03992 20.698L5.27892 18.928C5.16996 18.6943 5.01603 18.4843 4.82592 18.31C3.65729 17.1809 2.99813 15.625 2.99992 14ZM5.99992 22.5C5.99992 22.2239 6.22377 22 6.49992 22L11.4999 22C11.7761 22 11.9999 22.2239 11.9999 22.5C11.9999 22.7761 11.7761 23 11.4999 23L11.2759 23.447C11.1067 23.7857 10.7606 23.9998 10.3819 24L7.61792 24C7.23925 23.9998 6.89318 23.7857 6.72392 23.447L6.49992 23C6.22377 23 5.99992 22.7761 5.99992 22.5Z" fill="#f2f4ff" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M0.54349 4L3.45651 8.06378" fill="none" opacity="0" stroke="#ffbe0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<path d="M9 1L9 6" fill="none" opacity="0" stroke="#ffbe0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<path d="M17.4457 3.99232L14.5543 8.07146" fill="none" opacity="0" stroke="#ffbe0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</g>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M4.75 8C4.43524 8 4.13885 8.14819 3.95 8.4L1.1 12.2C1.03509 12.2865 1 12.3918 1 12.5L1 23C1 23.5523 1.44772 24 2 24L16 24C16.5523 24 17 23.5523 17 23L17 12.5C17 12.3918 16.9649 12.2865 16.9 12.2L14.05 8.4C13.8611 8.14819 13.5648 8 13.25 8C13.25 8 4.75 8 4.75 8ZM16 12.667L16 13L2 13L2 12.667L2.5 12L8.5 12L8.5 9L9.5 9L9.5 12L15.5 12C15.5 12 16 12.667 16 12.667Z" fill="#f2f4ff" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</svg>
