@@ -644,9 +644,6 @@ main{
 .title{
     font-size: var(--fs_32px);
     font-weight: 300;
-    opacity: 0;
-    scale: 0;
-    transition: all .4s ease;
 }
 
 .title i{
@@ -670,9 +667,6 @@ main{
     font-size: var(--fs_14px);
     margin-bottom: 2rem;
     width: 100%;
-    opacity: 0;
-    scale: 0;
-    transition: all .5s ease;
 }
 
 .category_container{
@@ -683,17 +677,6 @@ main{
     flex-wrap: wrap;
     row-gap: 3rem;
     column-gap: 2rem;
-}
-
-.cat_con{
-    opacity: 0;
-    scale: 0;
-    transition: scale .5s ease-in-out, opacity .7s ease-in-out;
-}
-
-.cat_con_visible{
-    scale: 1;
-    opacity: 1;
 }
 
 .category{
