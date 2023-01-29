@@ -507,6 +507,7 @@ nav a{
         left: 0;
         width: 33%;
         height: 170px;
+        padding: 1rem;
 
         z-index: 3;
     }
@@ -516,10 +517,15 @@ nav a{
         position: absolute;
         top: 1.5rem;
     }
-
+    
     .current_sale{
-        bottom: 2rem;
+        font-size: var(--fs_16px);
+        text-align: center;
+        padding-inline: .5rem;
+        width: 100%;
         position: absolute;
+        bottom: 2rem;
+        left: 0;
     }
 
     .sale_1{
@@ -638,6 +644,9 @@ main{
 .title{
     font-size: var(--fs_32px);
     font-weight: 300;
+    opacity: 0;
+    scale: 0;
+    transition: all .4s ease;
 }
 
 .title i{
@@ -661,6 +670,9 @@ main{
     font-size: var(--fs_14px);
     margin-bottom: 2rem;
     width: 100%;
+    opacity: 0;
+    scale: 0;
+    transition: all .5s ease;
 }
 
 .category_container{
@@ -671,6 +683,17 @@ main{
     flex-wrap: wrap;
     row-gap: 3rem;
     column-gap: 2rem;
+}
+
+.cat_con{
+    opacity: 0;
+    scale: 0;
+    transition: scale .5s ease-in-out, opacity .7s ease-in-out;
+}
+
+.cat_con_visible{
+    scale: 1;
+    opacity: 1;
 }
 
 .category{

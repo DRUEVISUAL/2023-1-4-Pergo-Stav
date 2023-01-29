@@ -516,6 +516,7 @@ nav a {
     left: 0;
     width: 33%;
     height: 170px;
+    padding: 1rem;
     z-index: 3;
   }
   .hero_desktop_bottom_card_title {
@@ -524,8 +525,13 @@ nav a {
     top: 1.5rem;
   }
   .current_sale {
-    bottom: 2rem;
+    font-size: var(--fs_16px);
+    text-align: center;
+    padding-inline: 0.5rem;
+    width: 100%;
     position: absolute;
+    bottom: 2rem;
+    left: 0;
   }
   .sale_1 {
     -webkit-animation: fade_1 10s ease-in-out infinite both running;
@@ -666,6 +672,9 @@ main {
 .title {
   font-size: var(--fs_32px);
   font-weight: 300;
+  opacity: 0;
+  scale: 0;
+  transition: all 0.4s ease;
 }
 
 .title i {
@@ -689,6 +698,9 @@ main {
   font-size: var(--fs_14px);
   margin-bottom: 2rem;
   width: 100%;
+  opacity: 0;
+  scale: 0;
+  transition: all 0.5s ease;
 }
 
 .category_container {
@@ -700,6 +712,17 @@ main {
   row-gap: 3rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+
+.cat_con {
+  opacity: 0;
+  scale: 0;
+  transition: scale 0.5s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+.cat_con_visible {
+  scale: 1;
+  opacity: 1;
 }
 
 .category {
