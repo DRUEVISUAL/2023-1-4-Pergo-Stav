@@ -422,7 +422,7 @@ nav a {
     background-color: var(--main);
     display: flex;
     align-items: center;
-    justify-content: spa;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 98;
@@ -449,6 +449,9 @@ nav a {
     font-size: var(--fs_16px);
     font-weight: 500;
     width: 67%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     display: flex;
     gap: 15%;
   }
