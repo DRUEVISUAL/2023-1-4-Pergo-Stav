@@ -1,23 +1,23 @@
 gsap.registerPlugin()
 
 gsap.from(".title", {
-    scrollTrigger: ".title", x: "-150%", ease: 'ease-in', opacity: '0', filter: 'blur(5px)', druation: ".5"
+    scrollTrigger: ".title", x: "-150%", ease: 'ease-in', opacity: '0', filter: 'blur(5px)', druation: ".19"
   });
 
   gsap.from(".line", {
-    scrollTrigger: ".title", x: "-40%", ease: 'ease-in', opacity: '0', filter: 'blur(5px)', druation: ".5"
+    scrollTrigger: ".title", x: "-40%", ease: 'ease-in', opacity: '0', filter: 'blur(5px)', druation: ".19"
   });
 
   gsap.from(".category_description", {
-    scrollTrigger: ".category_container", x: "-40%", ease: 'ease-in', opacity: '0', delay: ".25", filter: 'blur(20px)', druation: ".5"
+    scrollTrigger: ".category_container", x: "-40%", ease: 'ease-in', opacity: '0', delay: ".25", filter: 'blur(20px)', druation: ".19"
   });
 
   gsap.from(".category", {
-    scrollTrigger: ".category", x: "-35%", ease: 'ease-in', autoAlpha: '0', delay: ".6", filter: 'blur(2px)', stagger: '.1', druation: ".5"
+    scrollTrigger: ".category", x: "-35%", ease: 'ease-in', autoAlpha: '0', delay: ".6", filter: 'blur(2px)', stagger: '.075', druation: ".1"
   });
 
   gsap.from(".nav_main", {
-    scrollTrigger: ".category", y: "-100%", ease: 'ease-in', opacity: '0', filter: 'blur(2px)', delay: "1"
+    scrollTrigger: ".category", y: "-100%", ease: 'ease-in', opacity: '0', filter: 'blur(2px)', delay: "1.5"
   });
 
 gsap.from('.hb', { druation: '4s', x: '-100%', ease: 'ease', filter: 'blur(20px)', delay: '.25'})
