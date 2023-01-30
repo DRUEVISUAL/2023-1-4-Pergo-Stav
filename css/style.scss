@@ -146,21 +146,21 @@ nav a{
 }
 
 .hero_background_1{
-    background-image: url(../img/hero/hero_1.webp);
+    background-image: url(../img/hero/hero_1\ Large.jpeg);
 }
 .hero_background_2{
     animation-delay: 9s;
-    background-image: url(../img/hero/hero_2.webp);
+    background-image: url(../img/hero/hero_2\ Large.jpeg);
     z-index: -1;
 }
 .hero_background_3{
     animation-delay: 17s;
-    background-image: url(../img/hero/hero_3.webp);
+    background-image: url(../img/hero/hero_3\ Large.jpeg);
     z-index: -2;
 }
 .hero_background_4{
     animation-name: move_fade_end!important;
-    background-image: url(../img/hero/hero_4.webp);
+    background-image: url(../img/hero/hero_4\ Large.jpeg);
     animation-delay: 23s;
     z-index: -3;
 }
@@ -260,7 +260,7 @@ nav a{
 .hero_bottom i{
     position: absolute;
     top: 3.5rem;
-    animation: down2 3s ease-in-out infinite forwards running;
+    animation: down2 2.5s ease-in-out infinite forwards running;
 }
 
 
@@ -666,7 +666,8 @@ main{
 .category_description{
     font-size: var(--fs_14px);
     margin-bottom: 2rem;
-    width: 100%;
+    width: 70%;
+    z-index: 1;
 }
 
 .category_container{
@@ -677,6 +678,7 @@ main{
     flex-wrap: wrap;
     row-gap: 3rem;
     column-gap: 2rem;
+    z-index: 1;
 }
 
 .category{
@@ -722,8 +724,8 @@ main{
     border: 8px solid white;
     border-radius: 2px;
 
-    width: 100%;
-    height: 100%;
+    width: 352px;
+    height: 272px;
     position: absolute;
     top: 0;
     right: 0;
@@ -736,6 +738,9 @@ a .category {
 color: var(--main);
 }
 
+.produkty_logo{
+    display: none;
+}
 
 /*//////////////////////////////////////////////////*/
 
@@ -755,6 +760,19 @@ color: var(--main);
         margin-top: 6rem;
         padding-inline: 6rem;
         margin-bottom: 4rem;
+    }
+
+    .produkty_logo{
+        display: block;
+        bottom: -21rem;
+        right: 1rem;
+        height: 20rem;
+        width: 30rem;
+        position: absolute;
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        z-index: 0;
+        opacity: .1;
     }
 }
 

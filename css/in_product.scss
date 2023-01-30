@@ -751,6 +751,10 @@ aside i{
     background-image: url(../img/ovaladnie/vypinac.png);
 }
 
+.kluka{
+    background-image: url(../img/ovaladnie/kluka.png);
+}
+
 #section_5{
     display: flex;
     align-items: flex-start;
@@ -885,13 +889,15 @@ th{
     background-color: var(--line);
 }
 
-.info_panel .figure_container{
+.figure_container{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    width: 100%;
+    text-align: center;
 }
 
-.info_panel figure img{
+.figure_container figure img{
     max-width: calc(300px - 2rem);
     border-radius: 4px;
 }
@@ -911,8 +917,9 @@ h4{
     margin-block: 1rem;
 }
 
-.info_panel li{
+.dropdown li{
     list-style: initial;
+    margin-bottom: 1rem;
 }
 
 .info_panel hr{
