@@ -12,5 +12,3 @@ gsap.from(".category_description", { x: "-35%", ease: 'ease-in', opacity: '0', d
 gsap.from(".item",  {x: "-35%", ease: 'ease-in', autoAlpha: '0', delay: ".4", filter: 'blur(2px)', stagger: '.1'})
 
 gsap.from(".nav_main", { y: "-100%", ease: 'ease-in', opacity: '0', filter: 'blur(2px)', delay: "1.2"});
-
-)///
