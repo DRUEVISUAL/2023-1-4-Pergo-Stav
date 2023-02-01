@@ -510,7 +510,7 @@ nav a{
 .vyhody_container{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -588,10 +588,14 @@ nav a{
     max-width: fit-content;
 }
 
+.color_category_title_container p {
+    font-size: var(--fs_14px);
+}
+
 .color_tiles_container{
     border-left: 1px solid var(--line);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
     flex-wrap: wrap;
@@ -755,6 +759,10 @@ aside i{
     background-image: url(../img/ovaladnie/kluka.png);
 }
 
+.retiazok{
+    background-image: url(../img/ovaladnie/retiazok.png);
+}
+
 #section_5{
     display: flex;
     align-items: flex-start;
@@ -914,6 +922,11 @@ th{
 
 h4{
     font-size: var(--fs_20px);
+    margin-block: 1rem;
+}
+
+h5{
+    font-size: var(--fs_17px);
     margin-block: 1rem;
 }
 

@@ -692,8 +692,8 @@ main{
 
 .category:hover .category_img, .category:hover .category_title{
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.10);
+
     scale: 1.02;
-    transition: box-shadow .5s ease, scale .5s ease;
 }
 
 .category_title{
