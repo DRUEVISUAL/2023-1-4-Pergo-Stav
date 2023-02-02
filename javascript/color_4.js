@@ -25,3 +25,6 @@ toggleLessColor[1].onclick = close (toggleLessColor, 1)
 
 toggleMoreColor[2].onclick = open (toggleMoreColor, 2)
 toggleLessColor[2].onclick = close (toggleLessColor, 2)
+
+toggleMoreColor[3].onclick = open (toggleMoreColor, 3)
+toggleLessColor[3].onclick = close (toggleLessColor, 3)

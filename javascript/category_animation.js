@@ -22,11 +22,11 @@ druation: ".19"
 gsap.from(".line", 
 {
 duration: ".19",  
-x: "-40%", 
+x: "-250%", 
 ease: 'ease-in', 
 opacity: '0', 
-filter: 'blur(5px)', 
-delay: ".2"
+filter: 'blur(5px)',
+delay: '.23'
 })
 
 gsap.from(".category_description",

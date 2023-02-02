@@ -572,6 +572,7 @@ nav a{
     border-radius: 4px;
     padding: .5rem;
     margin-bottom: 2rem;
+    width: 100%;
 
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -686,6 +687,10 @@ aside i{
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    .color_category{
+        padding: 1rem;
     }
 
     aside{

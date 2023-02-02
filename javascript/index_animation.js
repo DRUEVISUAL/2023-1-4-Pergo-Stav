@@ -14,11 +14,11 @@ gsap.from(".line",
 {
 scrollTrigger: ".title", 
 duration: ".19",  
-x: "-100%", 
+x: "-250%", 
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(2px)', 
-delay: ".35"
+delay: '.23'
 });
 
 
@@ -99,6 +99,16 @@ gsap.from('.logo',
 {
 druation: '.25', 
 x: '-100%', 
+ease: 'ease-in', 
+opacity: '0', 
+delay: '.25' 
+})
+
+
+gsap.from('#menu_button', 
+{
+druation: '.25', 
+x: '-180%', 
 ease: 'ease-in', 
 opacity: '0', 
 delay: '.25' 
