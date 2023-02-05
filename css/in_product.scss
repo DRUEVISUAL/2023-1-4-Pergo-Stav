@@ -403,13 +403,18 @@ nav a{
     }
 
     .product_img_container{
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
         width: 80%;
+        height: 100%;
     }
 
     .product_img{
+        margin: 0 auto;
         width: 90%;
+        position: sticky;
+        top: 5rem;
+        bottom: 10rem;
     }
 
     .scaled{
@@ -537,7 +542,7 @@ nav a{
     .vyhody_container{
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 4rem;
@@ -839,6 +844,10 @@ aside i{
     .rozmery_container_desktop{
         display: inline;
         width: 40%;
+    }
+
+    .rozmery_content_container{
+        border: 1px sol rebeccapurple;
     }
 }
 
