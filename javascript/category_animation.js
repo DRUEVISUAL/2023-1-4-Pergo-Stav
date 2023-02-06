@@ -50,6 +50,17 @@ filter: 'blur(2px)',
 stagger: '.09'
 })
 
+gsap.from(".gallery", 
+{
+duration: ".2", 
+x: "-55%", 
+ease: 'ease-in', 
+opacity: '0', 
+delay: ".5", 
+filter: 'blur(4px)', 
+stagger: '.09'
+})
+
 gsap.from(".nav_main", 
 { 
 duration: ".5", 
