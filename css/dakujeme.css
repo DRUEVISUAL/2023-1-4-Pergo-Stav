@@ -129,7 +129,6 @@ nav a {
 }
 
 .nav_buttons_phone {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   align-items: flex-start;
@@ -238,7 +237,6 @@ main {
 }
 
 .title_container {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -308,7 +306,6 @@ footer {
 
 footer a {
   width: 6rem;
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   margin-bottom: 1rem;

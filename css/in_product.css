@@ -73,7 +73,6 @@ section {
   position: absolute;
   top: 3rem;
   background-color: transparent;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   z-index: 0;
@@ -81,7 +80,6 @@ section {
 
 .breadcrumb a {
   font-size: var(--fs_14px);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: var(--main);
@@ -164,7 +162,6 @@ nav a {
 }
 
 .nav_buttons_phone {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   align-items: flex-start;
@@ -262,7 +259,6 @@ nav a {
 .title_phone {
   font-size: var(--fs_32px);
   text-align: center;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-block: 2rem;
@@ -320,7 +316,6 @@ nav a {
   font-weight: 600;
   background: var(--main);
   border-radius: 4px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.8rem 1.5rem;
@@ -378,7 +373,6 @@ nav a {
   .product_img {
     margin: 0 auto;
     width: 90%;
-    position: -webkit-sticky;
     position: sticky;
     top: 5rem;
     bottom: 10rem;
@@ -393,7 +387,6 @@ nav a {
     display: none;
   }
   .title_desktop {
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     font-size: var(--fs_45-2px);
@@ -450,7 +443,6 @@ nav a {
 }
 
 .title_container {
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   margin-block: 2rem;
@@ -539,7 +531,6 @@ nav a {
 .color_category_title {
   width: 235px;
   font-weight: 500;
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
@@ -560,7 +551,6 @@ nav a {
 
 .color_tiles_container figure {
   flex-grow: 1;
-  max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
   font-size: var(--fs_14px);
@@ -822,7 +812,6 @@ aside i {
 }
 
 table {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   min-width: 1024px;
@@ -833,7 +822,6 @@ table {
 
 table, th, td {
   border: 1px solid var(--line);
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -942,7 +930,6 @@ footer {
 
 footer a {
   width: 6rem;
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   margin-bottom: 1rem;

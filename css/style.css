@@ -75,14 +75,15 @@ nav {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-nav a {
-  width: 6.14rem;
-  height: 1.608rem;
-  z-index: 100;
+.nav_hero_link {
+  width: auto;
 }
 
-.logo {
-  width: 100%;
+.logo_hero {
+  height: 2rem;
+}
+
+nav a {
   z-index: 100;
 }
 
@@ -114,7 +115,6 @@ nav a {
 }
 
 .nav_buttons_phone {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   align-items: flex-start;
@@ -145,25 +145,21 @@ nav a {
 }
 
 .hero_background_2 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  animation-delay: 9s;
   background-image: url(../img/hero/hero_2\ Large.jpeg);
   z-index: -1;
 }
 
 .hero_background_3 {
-  -webkit-animation-delay: 17s;
-          animation-delay: 17s;
+  animation-delay: 17s;
   background-image: url(../img/hero/hero_3\ Large.jpeg);
   z-index: -2;
 }
 
 .hero_background_4 {
-  -webkit-animation-name: move_fade_end !important;
-          animation-name: move_fade_end !important;
+  animation-name: move_fade_end !important;
   background-image: url(../img/hero/hero_4\ Large.jpeg);
-  -webkit-animation-delay: 23s;
-          animation-delay: 23s;
+  animation-delay: 23s;
   z-index: -3;
 }
 
@@ -174,31 +170,11 @@ nav a {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  -webkit-animation-name: move_fade_1;
-          animation-name: move_fade_1;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes move_fade_1 {
-  0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
-    opacity: 0;
-  }
+  animation-name: move_fade_1;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 
 @keyframes move_fade_1 {
@@ -213,16 +189,6 @@ nav a {
     transform: scale(1.25) translateY(-15px);
     transform-origin: top;
     opacity: 0;
-  }
-}
-@-webkit-keyframes move_fade_end {
-  0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
-  }
-  100% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
   }
 }
 @keyframes move_fade_end {
@@ -289,35 +255,7 @@ nav a {
 .hero_bottom i {
   position: absolute;
   top: 3.5rem;
-  -webkit-animation: down2 2.5s ease-in-out infinite forwards running;
-          animation: down2 2.5s ease-in-out infinite forwards running;
-}
-
-@-webkit-keyframes down2 {
-  0% {
-    transform: translateY(-100%);
-  }
-  16% {
-    transform: translateY(-132.27%);
-  }
-  28% {
-    transform: translateY(-86.88%);
-  }
-  44% {
-    transform: translateY(-104.63%);
-  }
-  59% {
-    transform: translateY(-98.36%);
-  }
-  73% {
-    transform: translateY(-100.58%);
-  }
-  88% {
-    transform: translateY(-99.8%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
+  animation: down2 2.5s ease-in-out infinite forwards running;
 }
 
 @keyframes down2 {
@@ -367,7 +305,7 @@ nav a {
     width: 100%;
     height: 88px;
     right: 0;
-    padding-left: 1.875rem;
+    padding-left: 1.5rem;
   }
   .nav_main {
     background-color: var(--main);
@@ -379,6 +317,16 @@ nav a {
     z-index: 98;
     width: 100%;
     height: 60px;
+  }
+  .nav_hero_link {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .logo_hero {
+    height: 4rem;
+  }
+  .logo_main {
+    height: 2.5rem;
   }
   nav a {
     width: 8.375rem;
@@ -392,9 +340,6 @@ nav a {
     margin-top: 0.1rem;
     cursor: pointer;
     z-index: 2;
-  }
-  .logo {
-    width: 100%;
   }
   .nav_buttons_desktop {
     font-size: var(--fs_16px);
@@ -419,10 +364,9 @@ nav a {
     justify-content: center;
     margin-top: 0;
     width: 100px;
-    height: -webkit-max-content;
+    padding-left: 1.1rem;
     height: -moz-max-content;
     height: max-content;
-    padding-left: 1.5rem;
   }
   .icon {
     background-size: 14px;
@@ -496,7 +440,6 @@ nav a {
   .hero_title_container {
     left: 4rem;
     position: absolute;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     z-index: 2;
@@ -542,30 +485,11 @@ nav a {
     left: 0;
   }
   .sale_1 {
-    -webkit-animation: fade_1 10s ease-in-out infinite both running;
-            animation: fade_1 10s ease-in-out infinite both running;
+    animation: fade_1 10s ease-in-out infinite both running;
   }
   .sale_2 {
-    -webkit-animation: fade_2 10s ease-in-out infinite both running;
-            animation: fade_2 10s ease-in-out infinite both running;
+    animation: fade_2 10s ease-in-out infinite both running;
     opacity: 0;
-  }
-  @-webkit-keyframes fade_1 {
-    0% {
-      opacity: 1;
-    }
-    45% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    95% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   @keyframes fade_1 {
     0% {
@@ -582,23 +506,6 @@ nav a {
     }
     100% {
       opacity: 1;
-    }
-  }
-  @-webkit-keyframes fade_2 {
-    0% {
-      opacity: 0;
-    }
-    45% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    95% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
     }
   }
   @keyframes fade_2 {
@@ -671,7 +578,6 @@ main {
 }
 
 .title_container {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-bottom: 2rem;
@@ -819,7 +725,6 @@ footer {
 
 footer a {
   width: 6rem;
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   margin-bottom: 1rem;

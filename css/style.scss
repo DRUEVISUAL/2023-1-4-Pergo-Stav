@@ -79,17 +79,19 @@ nav{
     box-shadow: 0px 2px 12px rgb(0 0 0 / 30%);
 }
 
+.nav_hero_link{
+    width: auto;
+}
+
+.logo_hero{
+    height: 2rem;
+}
+
 nav a{
-    width: 6.140rem;
-    height: 1.608rem;
-
     z-index: 100;
 }
 
-.logo{
-    width: 100%;
-    z-index: 100;
-}
+
 
 .nav_buttons_desktop{
     display: none;
@@ -329,7 +331,7 @@ nav a{
         width: 100%;
         height: 88px;
         right: 0;
-        padding-left: 1.875rem;
+        padding-left: 1.5rem;
     }
 
     .nav_main{
@@ -342,6 +344,18 @@ nav a{
         z-index: 98;
         width: 100%;
         height: 60px;
+    }
+
+    .nav_hero_link{
+        height: max-content;
+    }
+
+    .logo_hero{
+        height: 4rem;
+    }
+
+    .logo_main{
+        height: 2.5rem;
     }
 
     nav a {
@@ -359,9 +373,7 @@ nav a{
         z-index: 2;
     }
 
-    .logo{
-        width: 100%;
-    }
+  
 
     .nav_buttons_desktop{
         font-size: var(--fs_16px);
@@ -390,8 +402,8 @@ nav a{
         justify-content: center;
         margin-top: 0;
         width: 100px;
+        padding-left: 1.1rem;
         height: max-content;
-        padding-left: 1.5rem;
     }
 
     .icon{

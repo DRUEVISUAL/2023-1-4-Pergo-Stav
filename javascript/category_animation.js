@@ -1,6 +1,5 @@
 gsap.registerPlugin()
 
-
 gsap.from(".breadcrumb", 
 { 
 duration: ".20", 
@@ -69,4 +68,14 @@ ease: 'ease-in',
 opacity: '.5', 
 filter: 'blur(2px)', 
 delay: "1"
+})
+
+gsap.from(".note", 
+{
+scrollTrigger: '.note_trigger',
+duration: ".5", 
+y: "-200%", 
+ease: 'ease-in', 
+opacity: '.5', 
+filter: 'blur(2px)'
 })

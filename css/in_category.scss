@@ -253,7 +253,6 @@ main{
     background-image: linear-gradient(180deg,var(--gradient_top),var(--gradient_bottom));
     display: grid;
     place-items: center;
-    min-width: 320px;
 }
 
 .container{
@@ -292,7 +291,6 @@ main{
 
 .category_description{
     font-size: var(--fs_14px);
-    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -384,10 +382,12 @@ main{
 
 .gallery{
     position: relative;
-    min-width: 21rem;
+    width: 21rem;
     height: 17rem;
     cursor: pointer;
+    overflow: hidden;
 
+    border-radius: 4px;
     transition: box-shadow .5s ease, scale .5s ease;
 }
 
@@ -398,9 +398,7 @@ main{
 }
 
 .gallery_img{
-    border-radius: 4px;
-
-    width: 100%;
+    
     height: 100%;
     position: absolute;
     top: 0;
@@ -410,7 +408,74 @@ main{
     transition: box-shadow .5s ease, scale .5s ease;
 }
 
+.note_container{
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    translate: (-50% 0%);
+    z-index: 2;
+    width: 100%;
+}
+
+.note{
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid var(--line);
+    padding: .5rem 1rem .5rem .5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note a{
+    color: var(--main);
+}
+
+.close{
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../img/close.svg);
+    background-position-x: 92%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    cursor: pointer;
+    backdrop-filter: opacity(.75);
+    padding-left: 1.5rem;
+}
+
+.note_trigger{
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    top: 200vh;
+}
+
+#tipy{
+    background-color: var(--white_60);
+    border-radius: 8px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1250px;
+    margin-block: 4rem;
+    margin-inline: .5rem;
+}
+
+#tipy li, ol li{
+    list-style: initial!important;
+    list-style: inside!important;
+}
+
 /*//////////////////////////////////////////////////*/
+
+@media screen and (max-width: 350px) {
+    .gallery{
+        width: 19rem;
+    }
+}
 
 @media screen and (min-width: 900px) {
 
@@ -429,10 +494,24 @@ main{
         padding-inline: 6rem;
         margin-bottom: 4rem;
     }
+
+    .close{
+        background-size: .75rem;
+        opacity: .75;
+    }
+
+    .note_container{
+        width: max-content;
+    }
+
+    #tipy{
+        padding: 2rem;
+        margin-inline: 7rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .container{
+    .container, .gallery_container{
         max-width: 1350px;
         padding-inline: 7rem;
     }
