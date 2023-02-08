@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="../javascript/script.js" defer></script>
+    <script src="../../javascript/kontakt_animation.js" defer></script>
 </head>
 <body>
     <nav class="nav_main">
@@ -24,14 +27,14 @@
 
         <i class="bi bi-list" id="menu_button"></i>
 
-        <div class="menu_phone">
-            <ul class="nav_buttons_phone flex_cc">
-                <li><a href="../index.html#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
-                <li><a href="./inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
-                <li><a href="#kontakt"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
-            </ul>
-        </div>
     </nav>
+    <div class="menu_phone" role="navigation">
+        <ul class="nav_buttons_phone flex_cc">
+            <li><a href="../index.html#produkty"><i class="bi bi-box2-fill"></i>Produkty</a></li>
+            <li><a href="./inspiracia.html"><i class="bi bi-lightbulb-fill"></i>Inšpirácia</a></li>
+            <li><a href="#kontakt"><i class="bi bi-chat-right-fill"></i>Kontakt</a></li>
+        </ul>
+    </div>
 
     <main id="kontakt">
 
@@ -40,7 +43,7 @@
             <div class="title_container">
                 <h1 class="title">V prípade <span>záujmu</span> alebo <span>otázok</span></h1>
                 <hr class="line">
-                <p>kontaktujte nás</p>
+                <p class="title_p">kontaktujte nás</p>
             </div>
 
             <div class="panel_container">
@@ -150,6 +153,5 @@
             <p>Vytvoril &#169; <a href="">DRUEVISUAL</a></p>
         </div>
     </footer>
-    <script src="../javascript/script.js"></script>
 </body>
 </html>
