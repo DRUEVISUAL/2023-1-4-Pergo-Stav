@@ -304,7 +304,6 @@ nav a{
 /*//////////////////////////////////////////////////*/
 
 
-
 @media screen and (min-width: 768px){
     .hero_title_container{
         position: absolute;
@@ -692,19 +691,21 @@ main{
 }
 
 .category_container{
-    padding: 0 auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content:center;
     flex-wrap: wrap;
-    row-gap: 3rem;
-    column-gap: 2.2rem;
+    row-gap: 3.5rem;
+    column-gap: 3.5rem;
     z-index: 1;
 }
 
 .category{
+    margin: 0 auto;
     position: relative;
-    min-width: 21rem;
+    width: 21rem;
     height: 17rem;
     cursor: pointer;
 
@@ -746,7 +747,7 @@ main{
     border: 8px solid white;
     border-radius: 2px;
 
-    width: 352px;
+    width: 100%;
     height: 272px;
     position: absolute;
     top: 0;
@@ -765,6 +766,12 @@ color: var(--main);
 }
 
 /*//////////////////////////////////////////////////*/
+
+@media screen and (max-width: 350px) {
+    .category{
+        width: 19rem;
+    }
+}
 
 @media screen and (min-width: 900px) {
 
