@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../css/in_product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="../../../javascript/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="../../../javascript/item_animation.js" defer></script>
 
 </head>
 <body>  
@@ -43,7 +47,7 @@
                 <h1 class="title_phone">Plisse</h1>
 
                 <figure class="product_img_container">
-                    <img src="../../../img/product_category/3_plisse/plisse.png" alt="Fotka o produktu plisse v sivom farbe" class="product_img">
+                    <img src="../../../img/product_category/3_plisse/plisse.png" alt="Fotka o produktu plisse" class="product_img">
                 </figure>
 
                 <hr class="line_section_1_phone">
@@ -1809,56 +1813,58 @@
     <section id="section_6">
         <div class="dropdown">
             <h3 id="info_button">Technické parametre</h3>
+            <div class="scroll closed">
 
-            <table class="info_panel_table closed">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Profil</th>
-                        <th>Dolný profil</th>
-                        <th>Bočné vedenie</th>
-                        <th>Typ látky</th>
-                        <th>Montáž</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Materiál</th>
-                        <td>Al</td>
-                        <td>Al</td>
-                        <td>Oceľové lanko (F1, F2, F3)</td>
-                        <td>Podľa aktuálneho vzorkovníka</td>
-                        <td>CA uchytenie do krídla iba pre VS2 <br>
-                        CA uchytenie do krídla    
-                        <br>
-                        L uchytenie na zasklievaciu lištu uholníkom <br>
-                        CB uchytenie na krídlo uholníkom <br>
-                        BV uchytenie na krídlo bez vŕtania svorkou <br>
-                        KL uchytenie na sklo so samolepiacou lištou <br>
-                        KL uchytenie na sklo so samolepiacou lištou pre VS2KL</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Farba</th>
-                        <td>Biela 01<br>
-                        Strieborná 02<br>
-                        Sivá matná 03 <br>
-                        Čiernohnedá 05<br>
-                        Bronzová 06<br>
-                        Antracitová 12</td>
-                        <td>Biela 01<br>
-                        Strieborná 02<br>
-                        Sivá matná 03<br>
-                        Čiernohnedá 05<br>
-                        Bronzová 06<br>
-                        Antracitová 12</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tfoot>
-            </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Profil</th>
+                            <th>Dolný profil</th>
+                            <th>Bočné vedenie</th>
+                            <th>Typ látky</th>
+                            <th>Montáž</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Materiál</th>
+                            <td>Al</td>
+                            <td>Al</td>
+                            <td>Oceľové lanko (F1, F2, F3)</td>
+                            <td>Podľa aktuálneho vzorkovníka</td>
+                            <td>CA uchytenie do krídla iba pre VS2 <br>
+                            CA uchytenie do krídla    
+                            <br>
+                            L uchytenie na zasklievaciu lištu uholníkom <br>
+                            CB uchytenie na krídlo uholníkom <br>
+                            BV uchytenie na krídlo bez vŕtania svorkou <br>
+                            KL uchytenie na sklo so samolepiacou lištou <br>
+                            KL uchytenie na sklo so samolepiacou lištou pre VS2KL</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Farba</th>
+                            <td>Biela 01<br>
+                            Strieborná 02<br>
+                            Sivá matná 03 <br>
+                            Čiernohnedá 05<br>
+                            Bronzová 06<br>
+                            Antracitová 12</td>
+                            <td>Biela 01<br>
+                            Strieborná 02<br>
+                            Sivá matná 03<br>
+                            Čiernohnedá 05<br>
+                            Bronzová 06<br>
+                            Antracitová 12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> <!-- scroll -->
         </div> <!-- dropdown_1 -->
 
         <div class="dropdown no_scroll">
@@ -1867,17 +1873,17 @@
             <div class="info_panel closed">
                 <div class="flex">
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/01-Plise-dolni-profil-bila.jpeg" alt="01 Bielá">
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/01-Plise-dolni-profil-bila.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/01-Plise-dolni-profil-bila.jpeg" alt="01 Bielá"></a>
     
                         <figcaption>01 Bielá</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/02-Plise-dolni-profil-stribrna-elox.jpeg" alt="02 Strieborná">
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/02-Plise-dolni-profil-stribrna-elox.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/02-Plise-dolni-profil-stribrna-elox.jpeg" alt="02 Strieborná"></a>
     
                         <figcaption>02 Strieborná</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/03-Plise-dolni-profil-seda.jpeg" alt="03 Šedá">
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/03-Plise-dolni-profil-seda.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/03-Plise-dolni-profil-seda.jpeg" alt="03 Šedá"></a>
     
                         <figcaption>03 Šedá</figcaption>
                     </figure>
@@ -1885,17 +1891,17 @@
 
                 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/05-Plise-dolni-profil-cernohneda.jpeg" alt="05 Čiernohnedá">
-
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/05-Plise-dolni-profil-cernohneda.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/05-Plise-dolni-profil-cernohneda.jpeg" alt="05 Čiernohnedá">
+                        </a>
                         <figcaption>05 Čiernohnedá</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/06-Plise-dolni-profil-bronz.jpeg" alt="06 Bronzová">
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/06-Plise-dolni-profil-bronz.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/06-Plise-dolni-profil-bronz.jpeg" alt="06 Bronzová"></a>
 
                         <figcaption>06 Bronzová</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/12-Plise-dolni-profil-antracit.jpeg" alt="12 Antracitová">
+                        <a href="../../../img/product_category/3_plisse/info/farebne_prevedenie/12-Plise-dolni-profil-antracit.jpeg"><img src="../../../img/product_category/3_plisse/info/farebne_prevedenie/12-Plise-dolni-profil-antracit.jpeg" alt="12 Antracitová"></a>
     
                         <figcaption>12 Antracitová</figcaption>
                     </figure>
@@ -1909,37 +1915,37 @@
             <div class="info_panel closed">
                 <div class="flex">
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/lista_VS2SC.webp" alt="Lišta rukoväte VS2SC">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/lista_VS2SC.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/lista_VS2SC.webp" alt="Lišta rukoväte VS2SC"></a>
 
                         <figcaption>Lišta rukoväte VS2SC</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC20-30.webp" alt="Lišta s rukovätou pre DFC20 a DFC30">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC20-30.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC20-30.webp" alt="Lišta s rukovätou pre DFC20 a DFC30"></a>
 
                         <figcaption>Lišta s rukovätou pre DFC20 a DFC30</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/ovladacia_rukovat.webp" alt="Ovládacia rukovät">
+                       <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/ovladacia_rukovat.webp"> <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/ovladacia_rukovat.webp" alt="Ovládacia rukovät"></a>
 
                         <figcaption>Ovládacia rukovät</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/brzdova_snura.webp" alt="Ovládanie brzdovou šnúrou">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/brzdova_snura.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/brzdova_snura.webp" alt="Ovládanie brzdovou šnúrou"></a>
 
                         <figcaption>Ovládanie brzdovou šnúrou</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_bez_klbu.webp" alt="Ovládacia tyč bez kľbu">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_bez_klbu.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_bez_klbu.webp" alt="Ovládacia tyč bez kľbu"></a>
 
                         <figcaption>Ovládacia tyč bez kľbu</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_s_klbom.webp" alt="Ovládacia tyč s kľbom">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_s_klbom.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/tyc_s_klbom.webp" alt="Ovládacia tyč s kľbom"></a>
 
                         <figcaption>Ovládacia tyč s kľbom</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC_VS2SC.webp" alt="Ovládacia tyč pre DFC a VS2SC">
+                        <a href="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC_VS2SC.webp"><img src="../../../img/product_category/3_plisse/info/varianty_ovladania/DFC_VS2SC.webp" alt="Ovládacia tyč pre DFC a VS2SC"></a>
 
                         <figcaption>Ovládacia tyč pre DFC a VS2SC</figcaption>
                     </figure>
@@ -1953,43 +1959,43 @@
             <div class="info_panel closed">
                 <div class="flex">
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-BV-uchyceni Large.jpeg" alt="BV uchytenie na krídlo bez vŕtania svorkou">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-BV-uchyceni Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-BV-uchyceni Large.jpeg" alt="BV uchytenie na krídlo bez vŕtania svorkou"></a>
 
                         <figcaption>BV uchytenie na krídlo bez vŕtania svorkou</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni Large.jpeg" alt="CA uchytenie do krídla">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni Large.jpeg" alt="CA uchytenie do krídla"></a>
 
                         <figcaption>CA uchytenie do krídla</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni-VS2 Large.jpeg" alt="CA uchytenie do krídla iba pre VS2">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni-VS2 Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CA-uchyceni-VS2 Large.jpeg" alt="CA uchytenie do krídla iba pre VS2"></a>
 
                         <figcaption>CA uchytenie do krídla iba pre VS2</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CB-uchyceni Large.jpeg" alt="CB uchytenie na krídlo uholníkom">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CB-uchyceni Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-CB-uchyceni Large.jpeg" alt="CB uchytenie na krídlo uholníkom"></a>
 
                         <figcaption>CB uchytenie na krídlo uholníkom</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchyceni Large.jpeg" alt="KL uchytenie na sklo so samolepiacou lištou">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchyceni Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchyceni Large.jpeg" alt="KL uchytenie na sklo so samolepiacou lištou"></a>
 
                         <figcaption>KL uchytenie na sklo so samolepiacou lištou</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchycení-VS2KL Large.jpeg" alt="KL uchytenie na sklo so samolepiacou lištou pre VS2KL">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchycení-VS2KL Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-KL-uchycení-VS2KL Large.jpeg" alt="KL uchytenie na sklo so samolepiacou lištou pre VS2KL"></a>
 
                         <figcaption>KL uchytenie na sklo so samolepiacou lištou pre VS2KL</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-L-uchyceni Large.jpeg" alt="L uchytenie na zasklievaciu lištu uholníkom">
+                        <a href="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-L-uchyceni Large.jpeg"><img src="../../../img/product_category/3_plisse/info/typy_vyhotovenia/Plisse-L-uchyceni Large.jpeg" alt="L uchytenie na zasklievaciu lištu uholníkom"></a>
 
                         <figcaption>L uchytenie na zasklievaciu lištu uholníkom</figcaption>
                     </figure>
@@ -2017,7 +2023,7 @@
             <p>Vytvoril &#169; <a href="">DRUEVISUAL</a></p>
         </div>
     </footer>
-
-    <script src="../../../javascript/script.js"></script>
+    <script src="../../../javascript/color_3.js"></script>
+    <script src="../../../javascript/info_4.js"></script>
 </body>
 </html>
