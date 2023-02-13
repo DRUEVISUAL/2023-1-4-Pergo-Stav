@@ -6,7 +6,6 @@ x: "-250%",
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(5px)', 
-druation: ".19"
 })
 
 gsap.from(".line", 
@@ -38,7 +37,6 @@ ease: 'ease-in',
 opacity: '0', 
 delay: ".5", 
 filter: 'blur(4px)', 
-stagger: '.1'
 })
 
 gsap.from(".nav_main", 

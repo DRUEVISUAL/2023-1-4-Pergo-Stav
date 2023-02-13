@@ -15,7 +15,6 @@ x: "-250%",
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(5px)', 
-druation: ".19"
 })
 
 gsap.from(".line", 

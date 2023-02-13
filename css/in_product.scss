@@ -132,6 +132,7 @@ nav{
 
 .nav_main{
     display: flex;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 nav a{
@@ -161,12 +162,15 @@ nav a{
 
 .menu_phone{
     background-color: var(--main);
-    position: absolute;
+    position: fixed;
     inset: 0;
     top: -16rem;
     width: 100%;
     height: 16rem;
+    display: grid;
+    place-content: center;
 
+    z-index: 3;
     transition: all .5s ease;
 }
 
@@ -179,7 +183,8 @@ nav a{
     width: max-content;
     align-items: flex-start;
     gap: 2rem;
-    margin: 5rem auto;
+    margin-top: 3rem;
+    margin-left: -2rem;
 }
 
 .nav_buttons_phone li a{
@@ -866,6 +871,10 @@ aside i{
 
 .scroll{
     overflow-x: scroll;
+}
+
+.dropdown figure img{
+    max-width: 100%;
 }
 
 

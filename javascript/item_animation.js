@@ -26,7 +26,6 @@ x: "-50%",
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(8px)', 
-druation: ".19",
 delay: ".6"
 })
 
@@ -40,7 +39,6 @@ x: "-50%",
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(6px)', 
-druation: ".19",
 delay: ".4"
 })
 
@@ -52,7 +50,6 @@ x: "-70%",
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(4px)', 
-druation: ".19",
 delay: ".7"
 })
 
@@ -62,7 +59,6 @@ scrollTrigger: '#section_1',
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(2px)', 
-druation: ".19",
 delay: "1.5"
 })
 
@@ -72,7 +68,6 @@ scrollTrigger: '#section_1',
 ease: 'ease-in', 
 opacity: '0', 
 filter: 'blur(2px)', 
-druation: ".19",
 delay: "1.5"
 })
 

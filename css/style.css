@@ -206,7 +206,7 @@ nav a {
   height: 100%;
   position: absolute;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .hero_title_container {
@@ -421,15 +421,21 @@ nav a {
     padding-inline: 4rem;
     z-index: 99;
   }
-  .hero_desktop_column {
-    background: linear-gradient(180deg, rgba(0, 35, 86, 0.96) 0%, rgba(0, 35, 87, 0.9216) 83.33%);
-    box-shadow: 8px 0px 32px rgba(0, 0, 0, 0.2);
+  .hero_desktop_column_container {
     position: absolute;
     left: 0;
     width: 33%;
     height: 100%;
-    opacity: 0.95;
     z-index: 1;
+  }
+  .hero_desktop_column {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 35, 86, 0.96) 0%, rgba(0, 35, 87, 0.9216) 83.33%);
+    box-shadow: 8px 0px 32px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
   }
   .hero_title {
     font-size: 2.5rem;
@@ -699,6 +705,9 @@ a .category {
     margin-top: 6rem;
     padding-inline: 6rem;
     margin-bottom: 4rem;
+  }
+  .category {
+    width: 21rem;
   }
   .produkty_logo {
     display: block;
